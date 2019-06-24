@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>test</title>
+<title>Menu</title>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @charset "UTF-8";
@@ -99,16 +99,17 @@
 
 .navigation > ul { width: 15em; }
 
-.navigation ul ul { width: 200px; }
+.navigation ul ul { width: 230px; }
 
 .navigation > ul > li > a {
   color: #ffffff;
+   border-bottom: 1px solid #37444a
 }
 
 .navigation > ul > li > a:hover { color: #ffffff; }
 
 .navigation > ul > li a:hover,
-.navigation > ul > li:hover a { background: #34A65F; }
+.navigation > ul > li:hover a { background: #333333; }
 
 .navigation li { position: relative; }
 
@@ -137,17 +138,17 @@
   border-radius: 0 3px 3px 0;
 }
 
-.navigation ul ul { border: 1px solid #34A65F; }
+.navigation ul ul { border: 1px solid #333333; }
 
 .navigation ul ul a { color: #ffffff; }
 
 .navigation ul ul a:hover { color: #ffffff; }
 
-.navigation ul ul li { border-bottom: 1px solid #0F8A5F; }
+.navigation ul ul li { border-bottom: 1px solid #37444a; }
 
 .navigation ul ul li:hover > a {
-  background: #4eb1ff;
-  color: #ffffff;
+  background: #95ceec;
+  color: #222222;
 }
 
 .navigation.align-right > ul > li > a {
@@ -196,7 +197,7 @@
   border-radius: 3px 0 0 3px;
 }
 body {
-	font-size: 12px;
+	font-size: 13px;
 	font-family: 'Poppins', sans-serif;
 }
 </style>
@@ -204,6 +205,64 @@ body {
 
 <body>
 
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h2 style="margin:0px;">Admin Menu</h2></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+
+<div class="navigation">
+
+<ul>
+   
+   <li> <a href="#">Favorites</a></li>
+    <li> <a href="#">Dashboard</a></li>
+     <li class="has-sub"> <a href="#">Admin</a>
+     <ul>
+     <li> <a href="#">Info</a></li>
+    <li> <a href="#">Product Activation</a></li>
+     <li> <a href="#">Clinic Info</a></li>
+   
+   <li> <a href="#">Providers</a></li>
+    <li> <a href="#">Staff</a></li>
+     <li> <a href="#">Roles</a></li>
+     <li> <a href="#">Roles Settings</a></li>
+        <li class="has-sub"> <a href="#">Resources</a>
+      <ul>
+        <li><a href="#">Lab</a></li>
+        <li><a href="#">Room</a></li>
+        <li><a href="#">Equipment</a></li>
+      </ul>
+    </li>
+    <li class="has-sub"> <a href="#">Data Access Admin</a>
+      <ul>
+        <li><a href="#">API Access</a></li>
+        <li><a href="#">Patient Portal</a></li>
+        <li><a href="#">Data Export-CCDA</a></li>
+         </ul>
+    </li>
+    
+    
+  </ul>
+ <li class="has-sub"><a href="#">Reports</a>
+  <ul>
+        <li><a href="#">EHI Logs</a></li>
+        <li><a href="#">Valid/Invalid Login Attempts</a></li>
+        <li><a href="#">Inactive Accounts Logs</a></li>
+        <li><a href="#">Admin User Logs</a></li>
+      </ul>
+ </li>
+  <li><a href="#">Tools</a></li>
+   <li><a href="#">Help</a></li>
+
+</li></ul>
+
+</div></td>
+    <td>
+<!--
 <div class="navigation">
 
 <ul>
@@ -255,7 +314,11 @@ body {
 
 </li></ul>
 
-</div>
+</div>--></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
 
 </body>
 </html>
